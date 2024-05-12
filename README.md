@@ -5,4 +5,5 @@
 3. Create a virtualenv in this directory `python -m virtualenv venv`.
 4. Activate the virtualenv `source venv/bin/activate`.
 5. Install the project dependencies `pip install -r requirements.txt`.
-6. Run the Django server `python townhallproject/manage.py runserver`.
+6. Run the database migrations `python townhallproject/manage.py migrate`.
+7. Run the Django server `python townhallproject/manage.py runserver`.
