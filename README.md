@@ -13,4 +13,4 @@
 
 9. Add the address you are running the FE on to `ALLOWED_HOSTS` in `settings.py`.
 10. Install [ngrok](https://ngrok.com/).
-11. Run `ngrok [port you are exposing BE on]`.
+11. Keep Django running and on a new terminal run `ngrok [port you are exposing Django server on]`.
