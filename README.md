@@ -6,5 +6,11 @@
 4. Activate the virtualenv `source venv/bin/activate`.
 5. Install the project dependencies `pip install -r requirements.txt`.
 6. Run the database migrations `python townhallproject/manage.py migrate`.
-7. Add the address you are running the FE to `CORS_ORIGIN_WHITELIST` in `settings.py`.
+7. Add the address you are running the FE on to `CORS_ORIGIN_WHITELIST` in `settings.py`.
 8. Run the Django server `python townhallproject/manage.py runserver`.
+
+# Exposing server
+
+9. Add the address you are running the FE on to `ALLOWED_HOSTS` in `settings.py`.
+10. Install [ngrok](https://ngrok.com/).
+11. Run `ngrok [port you are exposing BE on]`.

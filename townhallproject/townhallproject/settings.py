@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-34my8=(hl5s(o$fcs4#zu3c#x0bps@)+8ylifhhbxfi@)=d%x4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -132,6 +132,10 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:5173',
     # Add your frontend domain here
+]
+CORS_ALLOW_HEADERS = [
+    "ngrok-skip-browser-warning",
+    "content-type",
 ]
 
 REST_FRAMEWORK = {
