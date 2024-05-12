@@ -1,0 +1,9 @@
+@startuml
+
+class Post {
+  created_at: datetime
+  content: str
+  poster?: str
+}
+
+@enduml
